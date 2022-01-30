@@ -6,7 +6,10 @@ function Todo() {
 
   return (
     <div>
-      <input value={text} onChange={(e) => setText(e.target.value)} />
+      <label>
+        Todo
+        <input value={text} onChange={(e) => setText(e.target.value)} />
+      </label>
       <button
         onClick={() => {
           setTodos([text, ...todos]);
